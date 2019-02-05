@@ -2,7 +2,7 @@ sudo: required
 services:
   - docker
 script:
-  - docker build --pull --cache-from "$IMAGE_NAME" --tag "$IMAGE_NAME" .
+  - docker build .
 
 after_script:
   - docker images
